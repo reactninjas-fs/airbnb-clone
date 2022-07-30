@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Mitr&family=Open+Sans&family=Poppins:ital,wght@0,300;1,200&family=Roboto&family=Work+Sans&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Mitr', sans-serif;
+  
 }
 
+body a {
+  color: #fff;
+}
 
 .container {
   background: url("./mountain.jpeg");
@@ -12,4 +19,56 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
 }
+
+.header {
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.right-bar {
+  display: flex;
+  gap: 25px;
+  justify-content: space-around;
+  font-size: 20px;
+  align-items: center;
+}
+
+.right-bar a {
+  text-decoration: none;
+}
+
+.double-icon {
+  background-color: #fff;
+  color: #222;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+
+
