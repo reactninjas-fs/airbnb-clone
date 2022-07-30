@@ -72,3 +72,20 @@ body a {
 
 
 
+
+
+.input-area {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.input-area input {
+  margin-top: 80px;
+  width: 50%;
+  height: 80px;
+  border-radius: 50px;
+  outline: none;
+  
+}
