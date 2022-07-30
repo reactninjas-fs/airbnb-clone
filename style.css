@@ -11,6 +11,9 @@ body a {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   background: url("./mountain.jpeg");
   width: 100%;
   height: 100vh;
@@ -18,7 +21,7 @@ body a {
 
 .header {
   width: 100%;
-  height: 150px;
+  height: 9.5em;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -29,58 +32,80 @@ body a {
 }
 
 .logo img {
-  height: 60px;
+  height: 4.0em;
 }
 
 .nav-links {
   display: flex;
-  margin-left: 140px;
-  gap: 50px;
+  margin-left: 8.5em;
+  gap: 6em;
 }
 
 .nav-links a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1em;
+  transition: .6s;
+}
+
+.nav-links a:hover {
+  box-shadow: 0 2px 0 #fff;
 }
 
 .right-bar {
   display: flex;
-  gap: 25px;
+  gap: 0.7em;
   justify-content: space-around;
-  font-size: 1.2em;
+  font-size: 1em;
   align-items: center;
+}
+
+.right-bar a:first-of-type:hover {
+  background-color: rgba(202, 202, 202, 0.295);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.right-bar a:last-of-type:hover {
+  color: rgb(202, 202, 202);
+  padding: 10px;
 }
 
 .right-bar a {
   text-decoration: none;
+  padding: 10px;
 }
 
 .double-icon {
   background-color: #fff;
   color: #222;
-  padding: 10px;
-  border-radius: 35px;
+  padding: 0.7em;
+  border-radius: 2.1em;
+  cursor: pointer;
+}
+
+.double-icon:hover {
+  background-color: rgb(202, 202, 202);
 }
 
 .input-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 10px;
+  padding: 0.7em;
   background-color: #fff;
   margin: auto;
-  border-radius: 34px;
+  border-radius: 2.2em;
   width: fit-content;
-  max-height: 55px
+  max-height: 3em
 }
 
 .input-text:nth-child(1n + 2) {
   border-left: 1px solid #D3D3D3;
-  padding-left: 15px;
+  padding-left: 1em;
 }
 
 .input-text:nth-child(1) {
-  margin-left: 30px;
+  margin-left: 2em;
 }
 
 .input-text input{
@@ -120,19 +145,19 @@ body a {
 .main-area {
   display: flex;
   flex-direction: column;
-  max-width: 360px;
+  max-width: 18em;
   font-size: 2em;
   color: #fff;
-  padding: 140px;
+  padding: 4.8em;
 }
 
 .main-area button {
   font-size: 0.5em;
   font-weight: bold;
-  width: 150px;
-  padding: 8px;
-  border-radius: 13px;
-  margin-top: 20px;
+  width: 9em;
+  padding: 0.5em;
+  border-radius: 0.9em;
+  margin-top: 1.2em;
   cursor: pointer;
   transition: ease-in-out 200ms;
 }
@@ -141,5 +166,60 @@ body a {
   background: none;
   color: #fff;
   outline: solid;
-  font-size: 18px;
 }
+
+
+@media screen and (max-width: 768px) {
+  .input-container {
+    margin-top: 30px;
+    font-size: 0.5em;
+    width: 50vh;
+    max-height: 2em;
+    margin-bottom: 150px;
+  }
+
+  .header {
+    width: 52vh;
+    margin-left: 12px;
+    font-size: 0.35em;
+  }
+
+  .button-area button {
+    height: 1.8em;
+    width: 1.8em;
+    border-radius: 50%;
+    margin-right: 0.3em;
+  }
+
+  .button-area i {
+    font-size: 0.8em;
+  }
+
+  .nav-links {
+    font-size: 1.3em;
+    gap: 0.6em
+  }
+
+  .main-area {
+    font-size: 1.5em;
+    color: #fff;
+    padding: 1.8em;
+  }
+  
+  .main-area button {
+    font-size: 0.5em;
+    font-weight: bold;
+    width: 9em;
+    padding: 0.5em;
+    border-radius: 0.9em;
+    margin-top: 1.2em;
+    cursor: pointer;
+    transition: ease-in-out 200ms;
+  }
+
+  .logo img {
+    height: 5.0em;
+  }
+}
+
+
